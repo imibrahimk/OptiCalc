@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import '../widgets/text_stf.dart';
 
+// ignore: must_be_immutable
 class DowntimeScreen extends StatelessWidget {
   DowntimeScreen({super.key});
 
