@@ -20,24 +20,24 @@ class DeveloperScreen extends StatelessWidget {
   // For email developer
 
   // For go developer FB profile
-  Future<void> _openFacebookProfile(String profileUrl) async {
-    // Facebook app URL scheme
-    final Uri fbProtocolUrl = Uri.parse('fb://facewebmodal/f?href=$profileUrl');
+  // Future<void> _openFacebookProfile(String profileUrl) async {
+  //   // Facebook app URL scheme
+  //   final Uri fbProtocolUrl = Uri.parse('fb://facewebmodal/f?href=$profileUrl');
 
-    // Browser fallback URL
-    final Uri fallbackUrl = Uri.parse(profileUrl);
+  //   // Browser fallback URL
+  //   final Uri fallbackUrl = Uri.parse(profileUrl);
 
-    // Try launching Facebook app URL
-    if (await canLaunchUrl(fbProtocolUrl)) {
-      await launchUrl(fbProtocolUrl);
-    }
-    // Fallback to browser if app is not installed
-    else if (await canLaunchUrl(fallbackUrl)) {
-      await launchUrl(fallbackUrl);
-    } else {
-      throw 'Could not launch $profileUrl';
-    }
-  }
+  //   // Try launching Facebook app URL
+  //   if (await canLaunchUrl(fbProtocolUrl)) {
+  //     await launchUrl(fbProtocolUrl);
+  //   }
+  //   // Fallback to browser if app is not installed
+  //   else if (await canLaunchUrl(fallbackUrl)) {
+  //     await launchUrl(fallbackUrl);
+  //   } else {
+  //     throw 'Could not launch $profileUrl';
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -102,8 +102,7 @@ class DeveloperScreen extends StatelessWidget {
                     size: 30.0,
                   ),
 
-                  onPressed: () => _openFacebookProfile(
-                      'https://www.facebook.com/khalil2k10'), // Add your Facebook link
+                  onPressed: () {}, // Add your Facebook link
                 ),
               ],
             ),
@@ -145,23 +144,23 @@ class DeveloperScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // Apps Section
-            const Text(
-              'Apps',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 10),
-            const Card(
-              child: ListTile(
-                leading: Icon(Icons.chat, size: 40),
-                title: Text('ChatGPT'),
-                subtitle: Text('Find Your Answer'),
-              ),
-            ),
-            const SizedBox(height: 20),
+            // // Apps Section
+            // const Text(
+            //   'Apps',
+            //   style: TextStyle(
+            //     fontSize: 18,
+            //     fontWeight: FontWeight.bold,
+            //   ),
+            // ),
+            // const SizedBox(height: 10),
+            // const Card(
+            //   child: ListTile(
+            //     leading: Icon(Icons.chat, size: 40),
+            //     title: Text('ChatGPT'),
+            //     subtitle: Text('Find Your Answer'),
+            //   ),
+            // ),
+            // const SizedBox(height: 20),
 
             // Developer Speech
             const Text(

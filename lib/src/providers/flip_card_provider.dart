@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-// ChangeNotifier class to store the container dimensions
+import 'card_printer.dart';
 
 class FlipCardProvider with ChangeNotifier {
   bool _isFlipped = false;
@@ -21,5 +20,17 @@ class FlipCardProvider with ChangeNotifier {
     _width = width;
     _height = height;
     notifyListeners();
+  }
+
+  Future<void> printCard(context, frontKey, backKey) async {
+    final CardPrinter cardPrinter = CardPrinter();
+
+    if (isFlipped) {
+      toggleFlip();
+      await Future.delayed(Duration(milliseconds: 1000));
+      cardPrinter.generatePDF(context, frontKey, backKey);
+    } else {
+      cardPrinter.generatePDF(context, frontKey, backKey);
+    }
   }
 }

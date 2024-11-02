@@ -3,6 +3,7 @@ class EmployeesData {
     {
       'name': 'RAIHAN UDDIN',
       'designation': 'Sr. Operator & HOD',
+      'department': 'PET Bottle',
       'joiningDate': '26 Sep 2021',
       'id': '105230',
       'bloodGroup': 'B+',
@@ -12,6 +13,7 @@ class EmployeesData {
     {
       'name': 'MD. JABED ALAM',
       'designation': 'Sr. Operator',
+      'department': 'PET Bottle',
       'joiningDate': '08 Oct 2007',
       'id': '100376',
       'bloodGroup': 'B+',
@@ -21,6 +23,7 @@ class EmployeesData {
     {
       'name': 'RUBEL MITRA',
       'designation': 'Operator',
+      'department': 'PET Bottle',
       'joiningDate': '07 Sep 2015',
       'id': '300213',
       'bloodGroup': 'AB+',
@@ -30,6 +33,7 @@ class EmployeesData {
     {
       'name': 'MD. IBRAHIM KHALIL',
       'designation': 'Operator',
+      'department': 'PET Bottle',
       'joiningDate': '02 Apr 2017',
       'id': '105039',
       'bloodGroup': 'B+',
@@ -39,6 +43,7 @@ class EmployeesData {
     {
       'name': 'MD. HASAN',
       'designation': 'Asst. Operator',
+      'department': 'PET Bottle',
       'joiningDate': '17 Jul 2017',
       'id': '105052',
       'bloodGroup': 'B+',
@@ -48,6 +53,7 @@ class EmployeesData {
     {
       'name': 'MD. MIZANUR RAHMAN',
       'designation': 'Helper',
+      'department': 'PET Bottle',
       'joiningDate': '10 Sep 2017',
       'id': '105057',
       'bloodGroup': '',
@@ -57,6 +63,7 @@ class EmployeesData {
     {
       'name': 'MD. AL-AMIN',
       'designation': 'Helper',
+      'department': 'PET Bottle',
       'joiningDate': '29 Mar 2022',
       'id': '105243',
       'bloodGroup': 'A+',
@@ -66,6 +73,7 @@ class EmployeesData {
     {
       'name': 'SAIM HOSSAIN ABIR',
       'designation': 'Helper',
+      'department': 'PET Bottle',
       'joiningDate': '26 Jan 2022',
       'id': '105239',
       'bloodGroup': 'O-',
@@ -75,6 +83,7 @@ class EmployeesData {
     {
       'name': 'MOHAMMAD NEWAZ',
       'designation': 'Helper',
+      'department': 'PET Bottle',
       'joiningDate': '11 Nov 2023',
       'id': '105275',
       'bloodGroup': 'O+',
@@ -84,6 +93,7 @@ class EmployeesData {
     {
       'name': 'MD. AKRAM HOSSAIN',
       'designation': 'Helper',
+      'department': 'PET Bottle',
       'joiningDate': '21 Jan 2023',
       'id': '105252',
       'bloodGroup': 'B+',
@@ -93,11 +103,22 @@ class EmployeesData {
     {
       'name': 'MD. MIJANUR RAHMAN RONI',
       'designation': 'Helper',
+      'department': 'PET Bottle',
       'joiningDate': '05 Sep 2023',
       'id': '105268',
       'bloodGroup': 'A-',
       'mobileNo': '01622-959601',
       'photo': 'assets/staff/roni.png',
+    },
+    {
+      'name': 'Rajaul Hoq',
+      'designation': 'Sub Asst. Engineer',
+      'department': 'Electrical',
+      'joiningDate': '26.08.2018',
+      'id': '105098',
+      'bloodGroup': 'A+',
+      'mobileNo': '01622-959601',
+      'photo': 'assets/staff/sumon.jpg',
     },
   ];
 }

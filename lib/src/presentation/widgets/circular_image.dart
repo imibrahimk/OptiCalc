@@ -17,7 +17,7 @@ class CircularImage extends StatelessWidget {
           const BoxDecoration(color: Color(0xff00008B), shape: BoxShape.circle),
       child: ClipOval(
         child: SizedBox.fromSize(
-          size: Size.fromRadius(50.0.r), // Image radius
+          size: Size.fromRadius(60.0.r), // Image radius
           child: Image.asset(image),
         ),
       ),

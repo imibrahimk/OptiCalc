@@ -1,8 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:opticalc/src/providers/card_printer_provider.dart';
 import 'package:provider/provider.dart';
+import '../../providers/flip_card_provider.dart';
 import '../../utils/constant/colour.dart';
 import '../../utils/constant/custom_text_style.dart';
 import '../widgets/id_card/back_side_card.dart';
@@ -29,23 +28,16 @@ class FlipCardScreen extends StatelessWidget {
           IconButton(
               onPressed: () async {
                 final provider =
-                    Provider.of<CardPrinterProvider>(context, listen: false);
-
-                if (provider.isFlipped) {
-                  provider.toggleFlip();
-                  await Future.delayed(Duration(milliseconds: 1000));
-                  provider.generatePDF(frontKey, backKey);
-                } else {
-                  provider.generatePDF(frontKey, backKey);
-                }
+                    Provider.of<FlipCardProvider>(context, listen: false);
+                provider.printCard(context, frontKey, backKey);
               },
               icon: Icon(Icons.print_outlined))
         ],
       ),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.all(17.0.dm),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
         child: Center(
-          child: Consumer<CardPrinterProvider>(
+          child: Consumer<FlipCardProvider>(
             builder: (context, state, child) {
               return GestureDetector(
                 onTap: () => state.toggleFlip(),
