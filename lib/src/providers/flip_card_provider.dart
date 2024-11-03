@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'card_printer.dart';
+import '../services/card_printer.dart';
 
 class FlipCardProvider with ChangeNotifier {
   bool _isFlipped = false;

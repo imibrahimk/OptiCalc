@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -6,6 +5,7 @@ import '../../routes/route_pages.dart';
 import '../../utils/constant/colour.dart';
 import '../../utils/constant/custom_text_style.dart';
 import '../widgets/category_card.dart';
+import '../widgets/image_slider.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -32,15 +32,8 @@ class HomeScreen extends StatelessWidget {
           // SliverList for the horizontal CarouselView
           SliverToBoxAdapter(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16.0),
-              child: CarouselSlider(
-                options: CarouselOptions(
-                  autoPlay: true,
-                  enlargeCenterPage: true,
-                  scrollDirection: Axis.horizontal, // Horizontal scrolling
-                ),
-                items: imageList,
-              ),
+              padding: EdgeInsets.only(top: 8.0.dm),
+              child: ImageSlider(),
             ),
           ),
 
