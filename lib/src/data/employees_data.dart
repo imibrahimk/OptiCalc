@@ -110,15 +110,15 @@ class EmployeesData {
       'mobileNo': '01622-959601',
       'photo': 'assets/staff/roni.png',
     },
-    {
-      'name': 'Rajaul Hoq',
-      'designation': 'Sub Asst. Engineer',
-      'department': 'Electrical',
-      'joiningDate': '26.08.2018',
-      'id': '105098',
-      'bloodGroup': 'A+',
-      'mobileNo': '01622-959601',
-      'photo': 'assets/staff/sumon.jpg',
-    },
+    // {
+    //   'name': 'Rajaul Hoq',
+    //   'designation': 'Sub Asst. Engineer',
+    //   'department': 'Electrical',
+    //   'joiningDate': '26.08.2018',
+    //   'id': '105098',
+    //   'bloodGroup': 'A+',
+    //   'mobileNo': '01622-959601',
+    //   'photo': 'assets/staff/sumon.jpg',
+    // },
   ];
 }

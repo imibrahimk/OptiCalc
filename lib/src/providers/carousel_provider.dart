@@ -13,6 +13,7 @@ class CarouselProvider with ChangeNotifier {
     ImageData('assets/slider/slider_5.png'),
     ImageData('assets/slider/slider_6.png'),
     ImageData('assets/slider/slider_7.png'),
+    ImageData('assets/slider/slider_8.png'),
   ];
 
   void updateActiveIndex(int index) {

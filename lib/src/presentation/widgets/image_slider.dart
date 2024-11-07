@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../providers/carousel_provider.dart';
+import '../../utils/constant/colour.dart';
 
 class ImageSlider extends StatelessWidget {
   ImageSlider({super.key});
@@ -64,7 +65,7 @@ class ImageSlider extends StatelessWidget {
           effect: ExpandingDotsEffect(
             dotHeight: 8.0.h,
             dotWidth: 8.0.w,
-            activeDotColor: Colors.white,
+            activeDotColor: Colour.backGround,
           ),
           activeIndex: carouselProvider.activeIndex,
           count: carouselProvider.imageData.length,
